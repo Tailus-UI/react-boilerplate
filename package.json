@@ -1,5 +1,6 @@
 {
   "name": "react-boalerplate",
+  "description": "React boilerplate with Tailwindcss, Tailus Themer and Radix-UI installed and configured",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -22,5 +23,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.0.8"
-  }
+  },
+  "keywords": [
+    "react",
+    "tailwindcss",
+    "tailus",
+    "radix-ui",
+    "vite"
+  ]
 }
