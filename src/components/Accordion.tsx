@@ -1,5 +1,5 @@
-import Accordion from '../tailus/accordion/Accordion';
-import { ACCORDION_ITEM } from '../../constants/data.ts';
+import Accordion from 'tailus-ui/Accordion';
+import { ACCORDION_ITEM } from 'constants/data';
 
 export default () => {
   return (

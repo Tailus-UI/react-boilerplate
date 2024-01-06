@@ -1,5 +1,5 @@
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import {cn} from '../../../lib/utils.ts';
+import { cn } from 'lib/utils';
 import React from 'react';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import {
@@ -102,11 +102,9 @@ const AccordionContent = React.forwardRef<
   );
 });
 
-const Accordion = {
+export default {
   Root: AccordionRoot,
   Item: AccordionItem,
   Trigger: AccordionTrigger,
   Content: AccordionContent,
 };
-
-export default Accordion;
