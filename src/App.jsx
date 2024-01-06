@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Accordion from "./components/accordion/Accordion";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main>
+      <div className="my-24 px-6">
+        <div className="max-w-4xl mx-auto mb-12">
+          <h1 className="mt-6 text-5xl xl:text-6xl font-semibold text-gray-950 dark:text-white">
+            Tailus <br /> <span className="text-gray-500">Vue Boilerplate</span>
+          </h1>
+          <p className="mt-4 text-gray-700 dark:text-gray-300 text-lg">Start your Vue.js project with Tailus Themer and Radix-Vue installed</p>
+        </div>
+        <div className="sm:border flex items-center justify-center aspect-video max-w-4xl mx-auto sm:rounded-[--card-border-radius] sm:border-[--ui-light-border-color] sm:dark:border-[--ui-dark-border-color] sm:dark:bg-gray-900/50">
+          <Accordion />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </main>
+  );
 }
 
-export default App
+export default App;
